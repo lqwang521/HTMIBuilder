@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "<#Root#><#Unit#>Interface.h"
+#import "HTMIBasedViewModel.h"
 
-@interface <#Root#><#Unit#>ViewModel : NSObject <<#Root#><#Unit#>ViewModelInterface>
+@interface <#Root#><#Unit#>ViewModel : HTMIBasedViewModel <<#Root#><#Unit#>ViewModelInterface>
 
 @property (nonatomic,strong) id<<#Root#><#Unit#>ModelInterface> model;
 

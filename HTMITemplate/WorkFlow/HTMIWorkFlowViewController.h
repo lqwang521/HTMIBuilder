@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTMIBaseViewController.h"
 
-@interface HTMIWorkFlowViewController : UIViewController
+@interface HTMIWorkFlowViewController : HTMIBaseViewController
 
 @property (nonatomic,assign) NSInteger age;
 @property (nonatomic,copy) NSString * name;

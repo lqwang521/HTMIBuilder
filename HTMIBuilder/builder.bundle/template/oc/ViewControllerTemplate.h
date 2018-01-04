@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTMIBaseViewController.h"
 
-@interface <#Root#><#Unit#>ViewController : UIViewController
+@interface <#Root#><#Unit#>ViewController : HTMIBaseViewController
 
 <#InitializeProperty#>
 @end

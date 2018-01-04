@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "HTMIWorkFlowInterface.h"
+#import "HTMIBasedViewModel.h"
 
-@interface HTMIWorkFlowViewModel : NSObject <HTMIWorkFlowViewModelInterface>
+@interface HTMIWorkFlowViewModel : HTMIBasedViewModel <HTMIWorkFlowViewModelInterface>
 
 @property (nonatomic,strong) id<HTMIWorkFlowModelInterface> model;
 

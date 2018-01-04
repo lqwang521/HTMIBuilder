@@ -7,7 +7,7 @@
 //
 
 #import "Router.h"
-#import "CurrentViewController.h"
+#import "HTMICurrentViewController.h"
 
 @interface Router ()
 
@@ -47,7 +47,7 @@
 
 - (void)push:(NSString *)path {
     Class cls = NSClassFromString(self.map[path]);
-    [kCurrentViewController.navigationController pushViewController:[cls new] animated:YES];
+    [kHTMICurrentViewController.navigationController pushViewController:[cls new] animated:YES];
 }
 
 @end

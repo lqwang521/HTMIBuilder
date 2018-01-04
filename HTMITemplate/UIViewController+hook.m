@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+hook.h"
-#import "CurrentViewController.h"
+#import "HTMICurrentViewController.h"
 #import <Aspects.h>
 
 @implementation UIViewController (hook)
@@ -17,7 +17,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [UIViewController aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, BOOL animated) {
-            kCurrentViewController = aspectInfo.instance;
+            kHTMICurrentViewController = aspectInfo.instance;
         } error:NULL];
     });
 }

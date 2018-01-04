@@ -18,10 +18,10 @@
 @implementation HTMIWorkFlowPresenter
 
 - (void)adapterWithWorkFlowView:(id<HTMIWorkFlowViewInterface>)workflowView workflowViewModel:(id<HTMIWorkFlowViewModelInterface>)workflowViewModel {
-    
+
     _workflowView = workflowView;
     _workflowViewModel = workflowViewModel;
-    
+
     __weak typeof(self) _self = self;
     __weak id<HTMIWorkFlowViewModelInterface> __workflowViewModel = _workflowViewModel;
     [_workflowViewModel initializeWithModel:__workflowViewModel.model age:_self.age name:_self.name completion:^{
@@ -31,7 +31,7 @@
 }
 
 - (void)login1WithModel:(id<HTMIWorkFlowModelInterface>)model map:(NSDictionary *)map age:(NSInteger)age name:(NSString *)name completion:(void(^)())completion {
-    
+
     __weak typeof(self) _self = self;
     __weak id<HTMIWorkFlowViewModelInterface> __workflowViewModel = _workflowViewModel;
     [_workflowViewModel login1WithModel:model map:map age:age name:name completion:^{
@@ -41,7 +41,7 @@
 }
 
 - (void)login2WithModel:(id<HTMIWorkFlowModelInterface>)model map:(NSDictionary *)map completion:(void(^)())completion {
-    
+
     __weak typeof(self) _self = self;
     __weak id<HTMIWorkFlowViewModelInterface> __workflowViewModel = _workflowViewModel;
     [_workflowViewModel login2WithModel:model map:map completion:^{
@@ -51,7 +51,7 @@
 }
 
 - (void)login3WithModel:(id<HTMIWorkFlowModelInterface>)model completion:(void(^)())completion {
-    
+
     __weak typeof(self) _self = self;
     __weak id<HTMIWorkFlowViewModelInterface> __workflowViewModel = _workflowViewModel;
     [_workflowViewModel login3WithModel:model completion:^{
