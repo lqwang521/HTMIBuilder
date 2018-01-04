@@ -1,0 +1,34 @@
+//
+//  HTMIPrefixHeader.pch
+//  MXClient
+//
+//  Created by wlq on 16/4/13.
+//  Copyright © 2016年 MXClient. All rights reserved.
+//
+
+#ifndef HTMIPrefixHeader_pch
+#define HTMIPrefixHeader_pch
+
+
+#ifdef __OBJC__
+#import "HTMICurrentViewController.h"
+// 响应式框架
+//#import "ReactiveObjC.h"
+// 路由常量
+#import "HTMIRouterConstant.h"
+#import "JLRoutes+GenerateURL.h"
+
+// HTMI Base Protocol
+#import "HTMIViewProtocol.h"
+#import "HTMIViewModelProtocol.h"
+#import "HTMIViewControllerProtocol.h"
+
+// Category
+#import "UIView+HTMINoBase.h"
+#import "NSObject+HTMINoBase.h"
+#import "UIViewController+HTMINoBase.h"
+#import "ReactiveObjC.h"
+
+#endif
+
+#endif /* HTMIPrefixHeader_pch */

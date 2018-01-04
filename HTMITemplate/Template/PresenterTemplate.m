@@ -7,7 +7,8 @@
 //
 
 #import "PresenterTemplate.h"
-#import "Router.h"
+//@class HTMIWorkFlowViewController;
+#import "HTMIWorkFlowViewController.h"
 
 @implementation PresenterTemplate
 
@@ -29,7 +30,11 @@
 }
 
 - (void)pushTo {
-    [[Router sharedInstance] push:@"SpecialSale"];
+    NSString *router = [JLRoutes htmi_generateURLWithPattern:HTMINavPushRoute parameters:@[NSStringFromClass(HTMIWorkFlowViewController.class)] extraParameters:nil];
+    [[RACScheduler mainThreadScheduler] schedule:^{
+        
+        [[UIApplication sharedApplication] openURL:JLRGenRouteURL(HTMIDefaultRouteSchema, router)];
+    }];
 }
 
 @end

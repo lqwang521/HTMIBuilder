@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ControllerTemplate.h"
+#import "AppDelegate+RegisterRoute.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,45 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ControllerTemplate new]];
-    
+    [self registerNavgationRouter];
+    [self registerSchemaRouter];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+    
+    //    return [[JLRoutes routesForScheme:@"HTMIRoute"] routeURL:url];
+    // 默认的路由 跳转等等
+    if ([[url scheme] isEqualToString:HTMIDefaultRouteSchema]) {
+        
+        return [[JLRoutes globalRoutes] routeURL:url];
+    }
+    // http
+    else if ([[url scheme] isEqualToString:HTMIHTTPRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:HTMIHTTPRouteSchema] routeURL:url];
+    }
+    // https
+    else if ([[url scheme] isEqualToString:HTMIHTTPsRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:HTMIHTTPsRouteSchema] routeURL:url];
+    }
+    // Web交互请求
+    else if ([[url scheme] isEqualToString:HTMIWebHandlerRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:HTMIWebHandlerRouteSchema] routeURL:url];
+    }
+    // 请求回调
+    else if ([[url scheme] isEqualToString:HTMIComponentsCallBackHandlerRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:HTMIComponentsCallBackHandlerRouteSchema] routeURL:url];
+    }
+    // 未知请求
+    else if ([[url scheme] isEqualToString:HTMIUnknownHandlerRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:HTMIUnknownHandlerRouteSchema] routeURL:url];
+    }
+    return NO;
 }
 
 

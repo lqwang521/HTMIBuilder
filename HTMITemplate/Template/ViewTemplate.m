@@ -73,7 +73,7 @@
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         if (!cell) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-            cell.layer.contents = (__bridge id)[UIImage imageNamed:@"5cm : s"].CGImage;
+            cell.layer.contents = (__bridge id)[UIImage imageNamed:@"test"].CGImage;
         }
         return cell;
     }

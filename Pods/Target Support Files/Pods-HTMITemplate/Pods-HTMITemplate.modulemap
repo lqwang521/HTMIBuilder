@@ -1,0 +1,6 @@
+framework module Pods_HTMITemplate {
+  umbrella header "Pods-HTMITemplate-umbrella.h"
+
+  export *
+  module * { export * }
+}

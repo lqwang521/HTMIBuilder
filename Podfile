@@ -3,7 +3,7 @@
 platform :ios, '8.0'
 target 'HTMITemplate' do
     # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-    #use_frameworks!
+    use_frameworks!
     
     # Pods for SQTemplate
     pod 'AFNetworking', '~> 3.0'
@@ -13,4 +13,5 @@ target 'HTMITemplate' do
     pod 'JLRoutes', '~> 2.0.5'
     pod 'FMDB'
     pod 'Aspects'
+    pod 'ReactiveObjC', '~> 3.0.0'
 end
