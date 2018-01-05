@@ -5,11 +5,9 @@
 	<key>prefix</key>
 	<string>HTMI</string>
 	<key>module</key>
-	<string>Login</string>
+	<string>WorkFlow</string>
 	<key>parameter</key>
 	<dict>
-		<key>name</key>
-		<string>string</string>
 		<key>age</key>
 		<string>Int</string>
 	</dict>
@@ -24,7 +22,7 @@
 		<key>age</key>
 		<string>Int</string>
 		<key>height</key>
-		<string>float</string>
+		<string>Float</string>
 	</dict>
 	<key>actionList</key>
 	<array>

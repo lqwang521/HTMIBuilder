@@ -24,7 +24,7 @@
 
     __weak typeof(self) _self = self;
     __weak id<HTMIWorkFlowViewModelInterface> __workflowViewModel = _workflowViewModel;
-    [_workflowViewModel initializeWithModel:__workflowViewModel.model age:_self.age name:_self.name completion:^{
+    [_workflowViewModel initializeWithModel:__workflowViewModel.model age:_self.age completion:^{
         _self.workflowView.workflowViewModel = __workflowViewModel;
         _self.workflowView.workflowOperator = _self;
     }];

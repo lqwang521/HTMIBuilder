@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "HTMIBaseViewController.h"
 
-@interface HTMIWorkFlowViewController : HTMIBaseViewController
+@interface HTMILoginViewController : HTMIBaseViewController
 
-@property (nonatomic,assign) NSInteger age;
+@property (nonatomic,strong) NSDictionary * params;
 
 @end

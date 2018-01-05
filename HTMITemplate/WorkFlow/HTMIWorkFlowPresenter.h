@@ -12,7 +12,6 @@
 @interface HTMIWorkFlowPresenter : NSObject<HTMIWorkFlowViewModelInterface>
 
 @property (nonatomic,assign) NSInteger age;
-@property (nonatomic,copy) NSString * name;
 
 - (void)adapterWithWorkFlowView:(id<HTMIWorkFlowViewInterface>)workflowView workflowViewModel:(id<HTMIWorkFlowViewModelInterface>)workflowViewModel;
 

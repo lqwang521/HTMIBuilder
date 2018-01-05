@@ -16,7 +16,7 @@
 
 @property(nonatomic,strong,readonly)HTMIBasedViewModel *viewModel;
 @property(nonatomic,strong,readonly)UIPercentDrivenInteractiveTransition *interactivePopTransition;
-
+@property (nonatomic,strong) NSDictionary * params;
 
 - (instancetype)initWithViewModel:(HTMIBasedViewModel *)viewModel;
 

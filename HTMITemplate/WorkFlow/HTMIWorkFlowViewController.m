@@ -30,9 +30,8 @@
 - (HTMIWorkFlowPresenter *)workflowPresenter {
     
     if (!_workflowPresenter) {
-        _workflowPresenter = [HTMIWorkFlowPresenter new];
+        _workflowPresenter = [[HTMIWorkFlowPresenter alloc] initWithParams:self.params];
         _workflowPresenter.age = _age;
-        _workflowPresenter.name = _name;
     }
     return _workflowPresenter;
 }

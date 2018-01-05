@@ -19,7 +19,7 @@
     return _model;
 }
 
-- (void)initializeWithModel:(id<HTMIWorkFlowModelInterface>)model age:(NSInteger)age name:(NSString *)name completion:(void(^)())completion {
+- (void)initializeWithModel:(id<HTMIWorkFlowModelInterface>)model age:(NSInteger)age completion:(void(^)())completion {
 
 }
 

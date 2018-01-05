@@ -24,7 +24,7 @@
 @property (nonatomic,strong) id<HTMIWorkFlowModelInterface> model;
 
 @optional
-- (void)initializeWithModel:(id<HTMIWorkFlowModelInterface>)model age:(NSInteger)age name:(NSString *)name completion:(void(^)())completion;
+- (void)initializeWithModel:(id<HTMIWorkFlowModelInterface>)model age:(NSInteger)age completion:(void(^)())completion;
 - (void)login1WithModel:(id<HTMIWorkFlowModelInterface>)model map:(NSDictionary *)map age:(NSInteger)age name:(NSString *)name completion:(void(^)())completion;
 - (void)login2WithModel:(id<HTMIWorkFlowModelInterface>)model map:(NSDictionary *)map completion:(void(^)())completion;
 - (void)login3WithModel:(id<HTMIWorkFlowModelInterface>)model completion:(void(^)())completion;

@@ -79,6 +79,7 @@
     UIViewController *currentVC = [HTMICurrentViewController currentViewController];
     UIViewController *toVC = [[NSClassFromString(controllerName) alloc] init];
     toVC.params = parameters;
+    [self paramToVc:toVC param:parameters];
     if (currentVC && currentVC.navigationController) {
         if (isPresent) {
             [currentVC.navigationController presentViewController:toVC animated:YES completion:nil];
@@ -127,7 +128,7 @@
     }];
 }
 //传参数
--(void)paramToVc:(UIViewController *) v param:(NSDictionary<NSString *,NSString *> *)parameters{
+- (void)paramToVc:(UIViewController *) v param:(NSDictionary<NSString *,NSString *> *)parameters{
     //        runtime将参数传递至需要跳转的控制器
     unsigned int outCount = 0;
     objc_property_t * properties = class_copyPropertyList(v.class , &outCount);

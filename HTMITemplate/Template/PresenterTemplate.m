@@ -30,7 +30,7 @@
 }
 
 - (void)pushTo {
-    NSString *router = [JLRoutes htmi_generateURLWithPattern:HTMINavPushRoute parameters:@[NSStringFromClass(HTMIWorkFlowViewController.class)] extraParameters:nil];
+    NSString *router = [JLRoutes htmi_generateURLWithPattern:HTMINavPushRoute parameters:@[NSStringFromClass(HTMIWorkFlowViewController.class)] extraParameters:@{@"name":@"wlq",@"age":@27}];
     [[RACScheduler mainThreadScheduler] schedule:^{
         
         [[UIApplication sharedApplication] openURL:JLRGenRouteURL(HTMIDefaultRouteSchema, router)];
