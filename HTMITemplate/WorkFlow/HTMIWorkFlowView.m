@@ -62,6 +62,7 @@
 }
 
 - (void)setupSubviews {
+    self.backgroundColor = [UIColor whiteColor];
     //[self addSubview:self.tableView];
     
     [self addSubview:self.logoutBtn];
@@ -81,7 +82,7 @@
     }];
 }
 
-- (void)setWorkFlowViewModel:(id<HTMIWorkFlowViewModelInterface>)workflowViewModel {
+- (void)setWorkflowViewModel:(id<HTMIWorkFlowViewModelInterface>)workflowViewModel {
     _workflowViewModel = workflowViewModel;
     
     [[self.logoutBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {

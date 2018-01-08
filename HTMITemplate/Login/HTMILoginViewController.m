@@ -21,6 +21,10 @@
 
 @implementation HTMILoginViewController
 
+- (void)dealloc {
+        NSLog(@"%@ - execute %s",NSStringFromClass([self class]),__func__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];

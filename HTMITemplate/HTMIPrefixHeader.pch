@@ -9,8 +9,8 @@
 #ifndef HTMIPrefixHeader_pch
 #define HTMIPrefixHeader_pch
 
-
 #ifdef __OBJC__
+#import "codeObfuscation.h"
 
 #import "HTMIConst.h"
 #import "UIColor+HTMIColor.h"
@@ -19,9 +19,6 @@
 #import "HTMICurrentViewController.h"
 
 #import "SVProgressHUD+HTMIHelper.h"
-
-// 响应式框架
-//#import "ReactiveObjC.h"
 // 路由常量
 #import "HTMIRouterConstant.h"
 #import "JLRoutes+GenerateURL.h"

@@ -20,7 +20,7 @@
 }
 
 - (void)initializeWithModel:(id<HTMIWorkFlowModelInterface>)model age:(NSInteger)age completion:(void(^)())completion {
-
+    completion();
 }
 
 - (void)login1WithModel:(id<HTMIWorkFlowModelInterface>)model map:(NSDictionary *)map age:(NSInteger)age name:(NSString *)name completion:(void(^)())completion {

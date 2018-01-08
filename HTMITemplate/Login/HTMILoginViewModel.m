@@ -17,6 +17,10 @@
 
 @implementation HTMILoginViewModel
 
+- (void)dealloc {
+    NSLog(@"%@ - execute %s",NSStringFromClass([self class]),__func__);
+}
+
 - (HTMILoginModel *)model {
     
     if (!_model) {

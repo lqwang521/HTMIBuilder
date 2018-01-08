@@ -18,6 +18,8 @@
 		370731771FFF6D7F00114763 /* HTMILoginPwdInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370731741FFF6D7F00114763 /* HTMILoginPwdInputTableViewCell.xib */; };
 		3707317A1FFF771E00114763 /* HTMILoginInputFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 370731791FFF771E00114763 /* HTMILoginInputFooterView.m */; };
 		3707317D1FFF775000114763 /* HTMILoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3707317C1FFF775000114763 /* HTMILoginButton.m */; };
+		3755EE1820032066007F2218 /* confuse.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3755EE1720032065007F2218 /* confuse.sh */; };
+		3755EE1B20032126007F2218 /* func.list in Resources */ = {isa = PBXBuildFile; fileRef = 3755EE1A20032126007F2218 /* func.list */; };
 		379782C91FFE426600491318 /* HTMIBasedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 379782A91FFE426600491318 /* HTMIBasedViewModel.m */; };
 		379782CA1FFE426600491318 /* HTMIViewModelNavigationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 379782AC1FFE426600491318 /* HTMIViewModelNavigationImpl.m */; };
 		379782CB1FFE426600491318 /* HTMIViewModelIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 379782AE1FFE426600491318 /* HTMIViewModelIntercepter.m */; };
@@ -61,7 +63,6 @@
 		CF12ECE61EC0255100E16BAE /* ViewModelTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECE01EC0255100E16BAE /* ViewModelTemplate.m */; };
 		CF12ECE71EC0255100E16BAE /* ViewTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECE21EC0255100E16BAE /* ViewTemplate.m */; };
 		CFE501B41EC19915006BDE68 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE501B31EC19915006BDE68 /* libc++.tbd */; };
-		E52E16C3C91B5C9FB4C1CCE5 /* libPods-SQTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 592B2C3619CABBFEB1FB83C4 /* libPods-SQTemplate.a */; };
 		F9F446C5703ECC41CA92CA70 /* Pods_HTMITemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39890D937A228E936E14753 /* Pods_HTMITemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,9 @@
 		3707317B1FFF774F00114763 /* HTMILoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMILoginButton.h; sourceTree = "<group>"; };
 		3707317C1FFF775000114763 /* HTMILoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMILoginButton.m; sourceTree = "<group>"; };
 		3707317E1FFF785900114763 /* HTMIGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMIGlobalDefine.h; sourceTree = "<group>"; };
+		3755EE1720032065007F2218 /* confuse.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = confuse.sh; sourceTree = "<group>"; };
+		3755EE1920032117007F2218 /* codeObfuscation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
+		3755EE1A20032126007F2218 /* func.list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func.list; sourceTree = "<group>"; };
 		379782A91FFE426600491318 /* HTMIBasedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMIBasedViewModel.m; sourceTree = "<group>"; };
 		379782AB1FFE426600491318 /* NSObject+HTMINoBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HTMINoBase.h"; sourceTree = "<group>"; };
 		379782AC1FFE426600491318 /* HTMIViewModelNavigationImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMIViewModelNavigationImpl.m; sourceTree = "<group>"; };
@@ -155,10 +159,8 @@
 		37F1DC151FFCEB890018BC8A /* HTMIWorkFlowInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIWorkFlowInterface.h; sourceTree = "<group>"; };
 		37F1DC161FFCEB890018BC8A /* HTMIWorkFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIWorkFlowViewController.h; sourceTree = "<group>"; };
 		37F1DC171FFCEB890018BC8A /* HTMIWorkFlowPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIWorkFlowPresenter.h; sourceTree = "<group>"; };
-		51AD9D0245D84F44B950BECC /* Pods-SQTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQTemplate/Pods-SQTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		5388F307B3B9822CD414417E /* Pods-HTMITemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTMITemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTMITemplate/Pods-HTMITemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		592B2C3619CABBFEB1FB83C4 /* libPods-SQTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SQTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B2C21C7E3F7442A32E7953D /* Pods-SQTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQTemplate/Pods-SQTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		C39890D937A228E936E14753 /* Pods_HTMITemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTMITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF053AE11EBC68FB002E9EF6 /* HTMITemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTMITemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF053AE51EBC68FB002E9EF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE501B41EC19915006BDE68 /* libc++.tbd in Frameworks */,
-				E52E16C3C91B5C9FB4C1CCE5 /* libPods-SQTemplate.a in Frameworks */,
 				F9F446C5703ECC41CA92CA70 /* Pods_HTMITemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,8 +354,6 @@
 		A4E2AF0B06D35994ABD1EF38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				51AD9D0245D84F44B950BECC /* Pods-SQTemplate.debug.xcconfig */,
-				6B2C21C7E3F7442A32E7953D /* Pods-SQTemplate.release.xcconfig */,
 				5388F307B3B9822CD414417E /* Pods-HTMITemplate.debug.xcconfig */,
 				D4353A68C145CF91D4AAA8EF /* Pods-HTMITemplate.release.xcconfig */,
 			);
@@ -423,6 +422,9 @@
 		CF053AE41EBC68FB002E9EF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3755EE1A20032126007F2218 /* func.list */,
+				3755EE1920032117007F2218 /* codeObfuscation.h */,
+				3755EE1720032065007F2218 /* confuse.sh */,
 				379782DD1FFE50A600491318 /* HTMIPrefixHeader.pch */,
 				CF053AE51EBC68FB002E9EF6 /* main.m */,
 				3707316B1FFF5FCE00114763 /* HTMIConst.h */,
@@ -463,6 +465,7 @@
 				CF053ADF1EBC68FB002E9EF6 /* Resources */,
 				6088EB4DEE5F62AB0A20088C /* [CP] Embed Pods Frameworks */,
 				02CD3B7E1248D54614A6D37D /* [CP] Copy Pods Resources */,
+				3755EE1620032022007F2218 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -485,7 +488,7 @@
 					CF053AE01EBC68FB002E9EF6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 483VQ524HA;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -516,7 +519,9 @@
 				CF053AF11EBC68FB002E9EF6 /* Assets.xcassets in Resources */,
 				370731721FFF673C00114763 /* HTMILoginAccountInputTableViewCell.xib in Resources */,
 				CF053AEF1EBC68FB002E9EF6 /* Main.storyboard in Resources */,
+				3755EE1820032066007F2218 /* confuse.sh in Resources */,
 				370731771FFF6D7F00114763 /* HTMILoginPwdInputTableViewCell.xib in Resources */,
+				3755EE1B20032126007F2218 /* func.list in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +545,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTMITemplate/Pods-HTMITemplate-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		3755EE1620032022007F2218 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/HTMITemplate/confuse.sh;
 		};
 		6088EB4DEE5F62AB0A20088C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -768,12 +786,18 @@
 			baseConfigurationReference = 5388F307B3B9822CD414417E /* Pods-HTMITemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 483VQ524HA;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HTMITemplate/HTMIPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HTMITemplate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.htmitech.empotral;
+				PRODUCT_BUNDLE_IDENTIFIER = com.htmitech.emportal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7cbc8faf-5c4d-4190-9ae1-f453277cb373";
+				PROVISIONING_PROFILE_SPECIFIER = com.htmitech;
+				STRIP_INSTALLED_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -782,12 +806,18 @@
 			baseConfigurationReference = D4353A68C145CF91D4AAA8EF /* Pods-HTMITemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 483VQ524HA;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HTMITemplate/HTMIPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HTMITemplate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.htmitech.empotral;
+				PRODUCT_BUNDLE_IDENTIFIER = com.htmitech.emportal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7cbc8faf-5c4d-4190-9ae1-f453277cb373";
+				PROVISIONING_PROFILE_SPECIFIER = com.htmitech;
+				STRIP_INSTALLED_PRODUCT = YES;
 			};
 			name = Release;
 		};
