@@ -63,7 +63,7 @@
 
 - (void)pushtoOtherVC:(id<HTMIWorkFlowModelInterface>)model completion:(void(^)())completion {
     
-    NSString *router = [JLRoutes htmi_generateURLWithPattern:HTMINavPushRoute parameters:@[NSStringFromClass(ControllerTemplate.class)] extraParameters:nil];
+    NSString *router = [JLRoutes htmi_generateURLWithPattern:HTMINavPushRoute parameters:@[NSStringFromClass([ControllerTemplate class])] extraParameters:nil];
     [[RACScheduler mainThreadScheduler] schedule:^{
         
         [[UIApplication sharedApplication] openURL:JLRGenRouteURL(HTMIDefaultRouteSchema, router)];

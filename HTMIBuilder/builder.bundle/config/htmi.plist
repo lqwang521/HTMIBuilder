@@ -5,7 +5,7 @@
 	<key>prefix</key>
 	<string>HTMI</string>
 	<key>module</key>
-	<string>WorkFlow</string>
+	<string>AddressBook</string>
 	<key>parameter</key>
 	<dict>
 		<key>age</key>
