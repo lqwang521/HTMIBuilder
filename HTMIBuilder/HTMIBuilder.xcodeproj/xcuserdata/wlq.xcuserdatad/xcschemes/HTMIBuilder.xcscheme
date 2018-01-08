@@ -56,7 +56,7 @@
             BlueprintIdentifier = "14A5108E1F4585C500BB9242"
             BuildableName = "HTMIBuilder.app"
             BlueprintName = "HTMIBuilder"
-            ReferencedContainer = "container:../HTMIBuilder.xcodeproj">
+            ReferencedContainer = "container:HTMIBuilder.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,7 +80,7 @@
             BlueprintIdentifier = "14A5108E1F4585C500BB9242"
             BuildableName = "HTMIBuilder.app"
             BlueprintName = "HTMIBuilder"
-            ReferencedContainer = "container:../HTMIBuilder.xcodeproj">
+            ReferencedContainer = "container:HTMIBuilder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

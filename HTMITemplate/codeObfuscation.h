@@ -1,24 +1,24 @@
 #ifndef Demo_codeObfuscation_h
 #define Demo_codeObfuscation_h
-//confuse string at Mon Jan  8 14:52:40 CST 2018
-#define htmi_bindViewModelForController LtfyMRAgPMWwFrQY
-#define htmi_configNavigationForController ChDIuOYxFgpMTjPk
-#define htmi_createViewForConctroller kaQStezVqibZhyOm
-#define htmi_createViewForView VNmtxPLNFdXYyOvO
-#define htmi_dispalyInfoWithStatus cLQlkjDDIrZShNYZ
-#define htmi_dispalyLoadingMsgWithStatus uBCokYRykmumIizA
-#define htmi_dispalyMsgWithStatus dAHqrWweZnqdkiCk
-#define htmi_dispalyProgress ugnSlmQIhTkEoYcd
-#define htmi_displayErrorWithStatus kUXnHevocrMVbZIB
-#define htmi_displayOverFlowActivityView pFcJLHLyseIMldmT
-#define htmi_displaySuccessWithStatus zhsdsWCsbxHPNJSa
-#define htmi_generateURLWithPattern kfpnnclljSoSqkwy
-#define htmi_hideKeyBoard FIEONAAjldHlPNez
-#define htmi_initialDefaultsForController WijofAYDQPKfeyZd
-#define htmi_initializeForView uahRwotRkFsVtanz
-#define htmi_initializeForViewModel cdzlVjtyjdKJylNR
-#define htmi_mapDictionaryToURLQueryString JXyOhmvmFzsikoDT
-#define htmi_parseParamsWithURL bSBOvUrWGVBrcdss
-#define htmi_test HSIpCfzzWsLZORpL
-#define htmi_visibleBoundsShowNav ABynhAmJbmHXHtXm
+//confuse string at Mon Jan  8 17:05:01 CST 2018
+#define htmi_bindViewModelForController LLoPeTLdyAvmloXG
+#define htmi_configNavigationForController pdjwrsQEOIUwKXRM
+#define htmi_createViewForConctroller NSGVPliMEctYLJhH
+#define htmi_createViewForView PuIxgUiMfYWDCTZG
+#define htmi_dispalyInfoWithStatus DYbFpGXFEFDgslPK
+#define htmi_dispalyLoadingMsgWithStatus GGmEtcnuoKMksQsW
+#define htmi_dispalyMsgWithStatus SLTctITVqCuSTJbB
+#define htmi_dispalyProgress QuSsKbhyqDsbQMsh
+#define htmi_displayErrorWithStatus sETAAfZjcNKtCQGW
+#define htmi_displayOverFlowActivityView PYfMdWxtDLjQvzkn
+#define htmi_displaySuccessWithStatus ywVdQKmiqbODYgwu
+#define htmi_generateURLWithPattern ACZOYccglZSOwaQf
+#define htmi_hideKeyBoard ppoqltjUhZeYvaUW
+#define htmi_initialDefaultsForController HBdRfaXZDneHQZbM
+#define htmi_initializeForView FZqPlGIvQhNJDhSI
+#define htmi_initializeForViewModel aFQYTwnRrFCwTQlC
+#define htmi_mapDictionaryToURLQueryString aAlqpMbAKQssytBP
+#define htmi_parseParamsWithURL XjGaVAMuwWbaIySP
+#define htmi_test ThWgeHidfBfurkUQ
+#define htmi_visibleBoundsShowNav ejJEBfXWCxSSKHzv
 #endif

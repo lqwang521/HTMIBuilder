@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:HTMIBuilder.xcodeproj">
+      location = "group:HTMIBuilder/HTMIBuilder.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:HTMITemplate.xcodeproj">
