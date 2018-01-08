@@ -7,6 +7,7 @@
 //
 
 #import "<#Root#><#Unit#>View.h"
+#import "Masonry.h"
 
 @interface <#Root#><#Unit#>View () <UITableViewDataSource, UITableViewDelegate>
 
@@ -25,6 +26,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setupSubviews];
+        [self setupConstraints];
     }
     return self;
 }
@@ -34,6 +36,7 @@
     self = [super initWithCoder:coder];
     if (self) {
         [self setupSubviews];
+        [self setupConstraints];
     }
     return self;
 }
@@ -50,6 +53,10 @@
 
 - (void)setupSubviews {
     [self addSubview:self.tableView];
+}
+
+- (void)setupConstraints {
+    
 }
 
 - (void)set<#Unit#>ViewModel:(id<<#Root#><#Unit#>ViewModelInterface>)<#unit#>ViewModel {

@@ -29,6 +29,8 @@
 - (void)login2WithModel:(id<HTMIWorkFlowModelInterface>)model map:(NSDictionary *)map completion:(void(^)())completion;
 - (void)login3WithModel:(id<HTMIWorkFlowModelInterface>)model completion:(void(^)())completion;
 
+- (void)pushtoOtherVC:(id<HTMIWorkFlowModelInterface>)model completion:(void(^)())completion;
+
 @end
 
 @protocol HTMIWorkFlowViewInterface <NSObject>

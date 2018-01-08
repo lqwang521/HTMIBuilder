@@ -11,7 +11,15 @@
 
 
 #ifdef __OBJC__
+
+#import "HTMIConst.h"
+#import "UIColor+HTMIColor.h"
+#import "UIImage+HTMIColor.h"
+#import "HTMIGlobalDefine.h"
 #import "HTMICurrentViewController.h"
+
+#import "SVProgressHUD+HTMIHelper.h"
+
 // 响应式框架
 //#import "ReactiveObjC.h"
 // 路由常量

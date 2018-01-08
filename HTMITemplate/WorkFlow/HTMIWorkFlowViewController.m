@@ -17,6 +17,8 @@
 @property (nonatomic,strong) HTMIWorkFlowViewModel * workflowViewModel;
 @property (nonatomic,strong) HTMIWorkFlowView * workflowView;
 
+
+
 @end
 
 @implementation HTMIWorkFlowViewController
@@ -55,6 +57,7 @@
 
 - (void)setupView {
     [self.view addSubview:self.workflowView];
+    
 }
 
 - (void)adapterView {

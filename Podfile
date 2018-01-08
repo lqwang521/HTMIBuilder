@@ -1,12 +1,17 @@
-# Uncomment the next line to define a global platform for your project
-
+source 'https://git.coding.net/MyCoding521/HTMINetWork_Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-target 'HTMITemplate' do
-    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-    use_frameworks!
+inhibit_all_warnings!
+use_frameworks!
+#pod update --verbose --no-repo-update
+
+#pod install --verbose --no-repo-update
+
+def main
     
-    # Pods for SQTemplate
-    pod 'AFNetworking', '~> 3.0'
+    pod 'HTMINetWork', '~> 1.2.1'
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'Masonry', '~> 1.0.2'
     pod 'SDWebImage', '~>3.8'
     pod 'SVProgressHUD', '~> 2.1.2'
     # 路由组件化解耦
@@ -15,3 +20,8 @@ target 'HTMITemplate' do
     pod 'Aspects'
     pod 'ReactiveObjC', '~> 3.0.0'
 end
+
+target 'HTMITemplate' do
+    main
+end
+

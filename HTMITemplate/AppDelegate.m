@@ -7,10 +7,18 @@
 //
 
 #import "AppDelegate.h"
-#import "ControllerTemplate.h"
+#import "HTMIWorkFlowViewController.h"
 #import "AppDelegate+RegisterRoute.h"
 
+#import "HTMILoginViewController.h"
+
 @interface AppDelegate ()
+
+/**
+ 登录控制器
+ */
+@property (nonatomic, strong) HTMILoginViewController *loginController;
+
 
 @end
 
@@ -18,11 +26,51 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ControllerTemplate new]];
+    
+    
     [self registerNavgationRouter];
     [self registerSchemaRouter];
+    
+    // 配置根视图控制器
+    [self setupRootController];
+    
     return YES;
+}
+
+#pragma mark - Engine
+/// 初始化根页面
+- (void)setupRootController
+{
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    //监听通知
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:HTMILoginStateChangedNotificationKey object:nil] subscribeNext:^(NSNotification * _Nullable x) {
+        NSNumber * number = [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
+        BOOL isLogin = NO;
+        if (number) {
+            isLogin = number.boolValue;
+        }
+        if (isLogin) {//已登录
+            [self.window setRootViewController:[[UINavigationController alloc]initWithRootViewController:[HTMIWorkFlowViewController new]]];
+            
+        }else//未登录
+        {
+            [self.window setRootViewController:self.loginController];
+        }
+    }];
+    
+    // 发送一次通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:HTMILoginStateChangedNotificationKey object:nil];
+    
+    [self.window makeKeyAndVisible];
+}
+- (HTMILoginViewController *)loginController
+{
+    if (!_loginController) {
+        _loginController = [[HTMILoginViewController alloc] init];
+    }
+    return _loginController;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
