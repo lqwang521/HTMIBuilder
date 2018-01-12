@@ -11,7 +11,7 @@
 
 @implementation <#Root#><#Unit#>ViewModel
 
-- (<#Root#><#Unit#>Model *)model {
+- (id<<#Root#><#Unit#>ModelInterface>)model {
     
     if (!_model) {
         _model = [<#Root#><#Unit#>Model new];
