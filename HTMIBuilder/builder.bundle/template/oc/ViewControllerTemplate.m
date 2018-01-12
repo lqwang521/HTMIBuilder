@@ -21,11 +21,26 @@
 
 @implementation <#Root#><#Unit#>ViewController
 
+#pragma mark - Init
+
+
+#pragma mark - LifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
     [self adapterView];
 }
+
+- (void)setupView {
+    [self.view addSubview:self.<#unit#>View];
+}
+
+- (void)adapterView {
+    [self.<#unit#>Presenter adapterWith<#Unit#>View:self.<#unit#>View <#unit#>ViewModel:self.<#unit#>ViewModel];
+}
+
+#pragma mark - Getter
 
 - (<#Root#><#Unit#>Presenter *)<#unit#>Presenter {
     
@@ -52,12 +67,6 @@
     return _<#unit#>View;
 }
 
-- (void)setupView {
-    [self.view addSubview:self.<#unit#>View];
-}
-
-- (void)adapterView {
-    [self.<#unit#>Presenter adapterWith<#Unit#>View:self.<#unit#>View <#unit#>ViewModel:self.<#unit#>ViewModel];
-}
+#pragma mark - Setter
 
 @end

@@ -41,14 +41,9 @@
     return self;
 }
 
-- (UITableView *)tableView {
-    
-    if (!_tableView) {
-        _tableView = [UITableView new];
-        _tableView.dataSource = self;
-        _tableView.delegate = self;
-    }
-    return _tableView;
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    _tableView.frame = self.bounds;
 }
 
 - (void)setupSubviews {
@@ -57,11 +52,6 @@
 
 - (void)setupConstraints {
     
-}
-
-- (void)set<#Unit#>ViewModel:(id<<#Root#><#Unit#>ViewModelInterface>)<#unit#>ViewModel {
-    _<#unit#>ViewModel = <#unit#>ViewModel;
-    [_tableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -86,9 +76,23 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    _tableView.frame = self.bounds;
+#pragma mark - Getter
+
+- (UITableView *)tableView {
+    
+    if (!_tableView) {
+        _tableView = [UITableView new];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+    }
+    return _tableView;
+}
+
+#pragma mark - Setter
+
+- (void)set<#Unit#>ViewModel:(id<<#Root#><#Unit#>ViewModelInterface>)<#unit#>ViewModel {
+    _<#unit#>ViewModel = <#unit#>ViewModel;
+    [_tableView reloadData];
 }
 
 @end
